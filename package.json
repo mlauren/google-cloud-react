@@ -1,0 +1,68 @@
+{
+  "name": "google-cloud-react",
+  "version": "1.0.0",
+  "description": "React.js based Portfolio for deployment on Google Cloud Platform",
+  "repository": "https://github.com/mlauren/google-cloud-react",
+  "private": true,
+  "scripts": {
+    "start": "node app.js",
+    "dev": "./node_modules/.bin/gulp --gulpfile gulpfile.js",
+    "e2e": "rm -rf node_modules/ &&  samples test build --deploy --timeout 20m --builderProject $GCLOUD_PROJECT",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cover": "nyc --cache npm test; nyc report --reporter=html"
+  },
+  "author": "Lauren Maxwell",
+  "contributors": [
+    {
+      "name": "Lauren Maxwell",
+      "email": "mlmxwell@google.com"
+    }
+  ],
+  "cloud-repo-tools": {
+    "requiresKeyFile": true,
+    "requiresProjectId": true
+  },
+  "license": "MIT",
+  "semistandard": {
+    "globals": [
+      "after",
+      "afterEach",
+      "before",
+      "beforeEach",
+      "describe",
+      "it"
+    ]
+  },
+  "dependencies": {
+    "express": "4.16.2",
+    "jquery": "^2.1.4",
+    "jribbble": "^2.0.4",
+    "mongolab-data-api": "^1.1.6"
+  },
+  "devDependencies": {
+    "@google-cloud/nodejs-repo-tools": "2.1.0",
+    "ava": "0.23.0",
+    "supertest": "3.0.0",
+    "tap-dot": "1.0.5",
+    "babel-preset-react": "^6.3.13",
+    "babelify": "^7.2.0",
+    "browser-sync": "^2.11.1",
+    "browserify": "^12.0.1",
+    "gulp": "^3.9.0",
+    "gulp-eslint": "^1.1.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.1.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.3",
+    "jquery": "^2.1.4",
+    "jribbble": "^2.0.4",
+    "react": "^0.14.5",
+    "react-dom": "^0.14.5",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "engines": {
+    "node": ">=4.3.2"
+  }
+}
