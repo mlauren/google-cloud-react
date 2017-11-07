@@ -14,11 +14,11 @@
 
 1.  Clone the repository:
 
-        git clone https://github.com/GoogleCloudPlatform/nodejs-getting-started.git
+        git clone https://github.com/mlauren/google-cloud-react.git
 
 1.  Change directory:
 
-        cd nodejs-getting-started/1-hello-world
+        cd google-cloud-react
 
 1.  Install dependencies using NPM or Yarn:
 
